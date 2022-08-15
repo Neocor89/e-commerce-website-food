@@ -4,7 +4,8 @@
    * colors
    */
 
-  --hoockers-green_20: hsl(148, 20%, 38%, 0.2);
+   --champagne_50: hsl(37.1,56.7%,88.2%);
+   --floral-white: hsl(35,60%,96.1%);
   --pale-spring-bud: hsl(294, 86%, 91%);
   --hoockers-green: hsl(148, 20%, 38%);
   --spanish-gray: hsl(0, 0%, 61%);
@@ -14,6 +15,9 @@
   --gray-web: hsl(0, 0%, 49%);
   --white_30: hsl(0, 0%, 100%, 0.3);
   --pale-pink-cart: hsla(5, 71%, 71%, 1);
+  --bright-limon-yellow: hsla(52, 98%, 58%, 1);
+  --gold-burlywood: hsla(35.8,55.9%,65.3%, 1);
+  --roja-deliciosa: hsl(355, 78%, 56%);
   --black_70: hsla(0, 0%, 0%, 0.7);
   --black_50: hsla(0, 0%, 0%, 0.5);
   --black_15: hsla(0, 0%, 0%, 0.15);
@@ -137,7 +141,7 @@ html {
 
 body {
   background-color: var(--white);
-  color: var(--gray-web);
+  /* color: var(--gray-web); */
   font-size: 1.6rem;
   font-weight: var(--fw-500);
   line-height: 1.6;
@@ -159,7 +163,7 @@ body {
 
 
 /*-----------------------------------*\
-  #REUSABLE STYLE
+  * REUSABLE STYLE *
 \*-----------------------------------*/
 
 .container { padding-inline: 15px; }
@@ -170,6 +174,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.has-bg-image--resize {
+  background-size: contain;
+  object-fit: cover;
 }
 
 .h1,
@@ -202,14 +213,20 @@ body {
 
 .btn-primary,
 .btn-secondary:is(:hover, :focus) {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--floral-white);
+  color: var(--black);
 }
 
-.btn-primary:is(:hover, :focus) { background-color: var(--hoockers-green); }
+
+.btn-primary--color:is(:hover, :focus) {
+  color: var(--black);
+}
+
+.btn-primary--color { background-color: var(--gold-burlywood); }
+.btn-primary:is(:hover, :focus) { background-color: var(--gold-burlywood); }
 
 .btn-secondary {
-  background-color: var(--white);
+  background-color: var(--gold-burlywood);
   color: var(--black);
   box-shadow: var(--shadow-2);
 }
@@ -263,7 +280,7 @@ body {
   transition: var(--transition-2);
 }
 
-.hover\:shine:is(:hover, :focus) .has-bg-image { transform: scale(1.15); }
+.hover\:shine:is(:hover, :focus) .has-bg-image { transform: scale(1.10); }
 
 .hover\:shine::before {
   top: 0;
@@ -305,7 +322,7 @@ body {
 
 .badge {
   max-width: max-content;
-  background-color: var(--hoockers-green);
+  background-color: var(--pale-pink-cart);
   color: var(--white);
   font-weight: var(--fw-700);
   padding-inline: 12px;
@@ -493,9 +510,9 @@ body {
 
 
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
+/*----------------------------*\
+ :: HERO 
+\*----------------------------*/
 
 .hero { padding-block-start: 0; }
 
@@ -505,7 +522,8 @@ body {
   background-position: 40%;
 }
 
-.hero-title--correction-bg {
+
+.hero-title--correction-bg, .hero-text--correction-bg {
   color: var(--white)
 }
 
@@ -516,7 +534,7 @@ body {
 }
 
 .hero .price {
-  color: var(--black);
+  color: var(--white);
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
   margin-block-end: 20px;
@@ -529,7 +547,7 @@ body {
 
 
 /*-----------------------------------*\
-  #COLLECTION
+  :: COLLECTION
 \*-----------------------------------*/
 
 .collection { padding-block-start: 0; }
@@ -562,7 +580,7 @@ body {
 
 
 /*-----------------------------------*\
-  #SHOP
+  * SHOP *
 \*-----------------------------------*/
 
 .shop .title-wrapper {
@@ -574,7 +592,7 @@ body {
   margin-block-end: 50px;
 }
 
-.shop .btn-link:is(:hover, :focus) { color: var(--hoockers-green); }
+.shop .btn-link:is(:hover, :focus) { color: var(--roja-deliciosa); }
 
 .shop-card .card-banner {
   position: relative;
@@ -648,12 +666,12 @@ body {
 
 .shop-card .card-title:is(:hover, :focus) {
   text-decoration: underline;
-  color: var(--hoockers-green);
+  color: var(--gold-burlywood);
 }
 
 .shop-card .rating-wrapper {
   gap: 2px;
-  color: var(--hoockers-green);
+  color: var(--bright-limon-yellow);
   font-size: 15px;
 }
 
@@ -879,7 +897,7 @@ body {
   font-size: var(--fs-7);
   padding: 12px 18px;
   padding-inline-end: 145px;
-  border: 1px solid var(--hoockers-green_20);
+  border: 1px solid var(--champagne_50);
   border-radius: var(--radius-3);
   outline: none;
   transition: var(--transition-1);
@@ -1245,7 +1263,7 @@ body {
   .search-field {
     width: 270;
     font-size: var(--fs-7);
-    border: 2px solid var(--hoockers-green_20);
+    border: 2px solid var(--champagne_50);
     border-radius: var(--radius-3);
     padding: 10px 20px;
     padding-inline-end: 40px;
@@ -1331,7 +1349,7 @@ body {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: var(--black);
+    background-color: var(--gold-burlywood);
     transition: var(--transition-1);
     transform: scaleX(0);
     transform-origin: left;

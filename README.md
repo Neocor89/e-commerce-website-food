@@ -1,9 +1,10 @@
-# e-commerce-website-food
+# website Food Truck
+## **Deliciosa Churreria** 🤠
 
-## **Deliciosa churreria** 🤠
+### Website of the food truck "Churreria Deliciosa" sale of *waffle* France"
 
-### Home page 
+### **Home page** 
 
 🍦 First render part ice creams 
 
-<img src="./Readme-assets/first-image-website.png" alt="main page part ice creams" />
+<img src="./Readme-assets/first-render-website-image.png" alt="main page part ice creams" />

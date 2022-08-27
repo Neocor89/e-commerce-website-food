@@ -1,7 +1,7 @@
 :root {
 
   /**
-   * colors
+   * website colors
    */
 
    --champagne_50: hsl(37.1,56.7%,88.2%);
@@ -510,8 +510,45 @@ body {
 
 
 
+
+
+
+
+
+
 /*----------------------------*\
- :: HERO 
+ ::: MAP PAGES ::: 
+\*----------------------------*/
+
+#map {
+  height: 70vh;
+  width: 60vw;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.map-wrapper { 
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6vw;
+}
+
+.map-pages__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: clamp(2.5rem, 3.4vw, 4.8rem); 
+  /* font-size: clamp(3.1vw, 4vw, 35.8vw); */
+}
+
+
+
+
+
+
+/*----------------------------*\
+ ::: HERO :::
 \*----------------------------*/
 
 .hero { padding-block-start: 0; }
@@ -547,7 +584,7 @@ body {
 
 
 /*-----------------------------------*\
-  :: COLLECTION
+  ::: COLLECTION ::: 
 \*-----------------------------------*/
 
 .collection { padding-block-start: 0; }
@@ -580,7 +617,7 @@ body {
 
 
 /*-----------------------------------*\
-  * SHOP *
+  ::: SHOP ::: 
 \*-----------------------------------*/
 
 .shop .title-wrapper {
@@ -686,7 +723,7 @@ body {
 
 
 /*-----------------------------------*\
-  #BANNER
+  ::: BANNER ::: 
 \*-----------------------------------*/
 
 .banner-list {
@@ -722,7 +759,7 @@ body {
 
 
 /*-----------------------------------*\
-  #FEATURE
+  ::: FEATURE ::: 
 \*-----------------------------------*/
 
 .feature { text-align: center; }
@@ -743,7 +780,7 @@ body {
 
 
 /*-----------------------------------*\
-  #OFFER
+  ::: OFFER ::: 
 \*-----------------------------------*/
 
 .offer-banner {
@@ -800,7 +837,7 @@ body {
 
 
 /*-----------------------------------*\
-  #BLOG
+  ::: BLOG ::: 
 \*-----------------------------------*/
 
 .blog { padding-block-end: calc(var(--section-padding) * 2); }
@@ -829,7 +866,7 @@ body {
 
 
 /*-----------------------------------*\
-  #FOOTER
+  ::: FOOTER :::
 \*-----------------------------------*/
 
 .footer .logo { display: none; }
@@ -985,13 +1022,13 @@ body {
 
 /**
  * responsive for larger than 575px screen
- */
+*/
 
 @media (min-width: 575px) {
 
   /**
    * REUSED STYLE
-   */
+  */
 
   .container {
     max-width: 540px;
@@ -1011,7 +1048,7 @@ body {
    * HEADER
    */
 
-  .alert { padding-block: 8px; }
+  .alert { padding-block: 10px; }
 
   .header-top .container { padding-inline: 30px; }
 

@@ -1,13 +1,12 @@
 'use strict';
 
+import { secretMapToken } from '../secretKey.js';
 
-import {secretMapToken} from '../secretKey.js';
 
 /**
  **  mapBox configuration  */
 
 mapboxgl.accessToken = secretMapToken;
-
 
 const map = new mapboxgl.Map({
   container: 'map', //: container ID
@@ -20,8 +19,19 @@ map.on('style.load', () => {
   map.setFog({}); //: Set the default atmosphere style
 });
  
-const mapNav = new mapboxgl.NavigationControl()
- map.addControl(mapNav, 'top-left')
+var mapNav = new mapboxgl.NavigationControl()
+  map.addControl(mapNav)
+
+
+ map.addControl(new MapboxDirections({
+  accessToken: mapboxgl.accessToken}), 'top-left')
+
+
+  const marker1 = new mapboxgl.Marker()
+  .setLngLat([2.82, 50.43])
+  .addTo(map);
+
+
 
 
 /**

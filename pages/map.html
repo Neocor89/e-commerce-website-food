@@ -11,7 +11,7 @@
   <link rel="shortcut icon" href="/favicon-logo-brand-decline1.png" type="image/x-icon">
 
   <!-- 
-    * CSS link -->  
+    * CSS link -->
   <link rel="stylesheet" href="/CSS/style.css">
 
   <!-- 
@@ -21,17 +21,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- 
-    * mapBox cdn -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+    * mapBox cdn  -->
+    
+    <!-- 
+      * mapBox cdn -->
+      <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+    
+    
+    
+
+
 
   <!-- 
     * JS defer link -->
   <script type="module" src="../JS/map.js" defer></script>
 
+
   <title>Map Churreria Deliciosa</title>
 
 </head>
+
 <body>
 
   <header class="header">
@@ -67,19 +80,16 @@
 
           <button class="header-action-btn" aria-label="user">
             <a href="loyaltyCard.html">
-              <ion-icon 
-                name="person-outline" 
-                aria-hidden="true" 
-                aria-hidden="true">
-              <ion-icon>
+              <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true">
+                <ion-icon>
             </a>
           </button>
 
-          <button class="header-action-btn" aria-label="favourite item">
+          <!-- <button class="header-action-btn" aria-label="favourite item">
             <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
 
             <span class="btn-badge">0</span>
-          </button>
+          </button> -->
 
           <button class="header-action-btn" aria-label="cart item">
             <data class="btn-text" value="0">0€</data>
@@ -99,16 +109,16 @@
             </li>
 
             <li>
-              <a href="#collection" class="navbar-link has-after">Produits</a>
+              <a href="products.html" class="navbar-link has-after">Produits</a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#shop" class="navbar-link has-after">Acheter</a>
             </li>
 
             <li>
               <a href="#offer" class="navbar-link has-after">Evenement</a>
-            </li>
+            </li> -->
 
             <li>
               <a href="#footer" class="navbar-link has-after">Footer</a>
@@ -174,12 +184,12 @@
 
 
 
-    <!-- 
+  <!-- 
     ::: Title HERO :::
   ---->
 
   <div class="map-wrapper">
-    <h1 class="map-pages__title">Bientôt près de chez vous</h1>
+    <h1 class="map-pages__title">Trouvez vous facilement</h1>
   </div>
   <div id='map'></div>
 
@@ -189,6 +199,8 @@
   <!-- 
     ::: FOOTER :::
   ---->
+
+            <!-- TODO AJOUTER LA REDIRECTION VERS LES LIENS OFF DE CHURRERIA -->
 
   <footer class="footer footer-map" data-section id="footer">
     <div class="container">
@@ -271,10 +283,10 @@
 
         <div class="footer-list">
 
-          <p class="newsletter-title">Good emails.</p>
+          <p class="newsletter-title">Inscription Newsletter</p>
 
           <p class="newsletter-text">
-            Enter your email below to be the first to know about new collections and product launches.
+            Entrez votre adresse e-mail ci-dessous pour être le premier informé des nouveautés et bénéficier de réduction.
           </p>
 
           <form action="" class="newsletter-form">
@@ -288,9 +300,12 @@
 
       </div>
 
+
+
+
       <!-- 
         ::: BRAND & MEDIA :::
-      -->
+      ----->
       <div class="footer-bottom">
 
         <div class="wrapper">
@@ -339,10 +354,10 @@
   </footer>
 
 
-  
+
   <!-- 
     ::: BACK TO TOP :::
-  -->
+  ----->
 
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
@@ -351,8 +366,8 @@
 
   <!-- 
     * ionicon link -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

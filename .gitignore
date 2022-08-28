@@ -2,3 +2,6 @@
 #! API KEY
 /secretKey.js
 .env
+
+# Node
+node_modules/

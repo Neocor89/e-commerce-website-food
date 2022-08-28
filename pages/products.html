@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- * Favicon link -->
   <link rel="shortcut icon" href="/images/logo-brand-nav.png" type="image/svg+xml">
 
   <!-- * CSS link -->
   <link rel="stylesheet" href="../CSS/style.css">
+
+  <!-- * JS link -->
+  <script src="../JS/main.js" defer></script>
 
   <!-- 
     * Google Fonts 
@@ -17,10 +22,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+
   <title>Churreria Deliciosa New Products</title>
 </head>
+
 <body>
 
+  
+
+  
+  <main>
+    <article>
+
+      <!-- 
+        ::: HEADER Section :::
+      ----->
 
   <header class="header">
 
@@ -55,19 +71,16 @@
 
           <button class="header-action-btn" aria-label="user">
             <a href="loyaltyCard.html">
-              <ion-icon 
-                name="person-outline" 
-                aria-hidden="true" 
-                aria-hidden="true">
-              <ion-icon>
+              <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true">
+                <ion-icon>
             </a>
           </button>
 
-          <button class="header-action-btn" aria-label="favourite item">
+          <!-- <button class="header-action-btn" aria-label="favourite item">
             <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
 
             <span class="btn-badge">0</span>
-          </button>
+          </button> -->
 
           <button class="header-action-btn" aria-label="cart item">
             <data class="btn-text" value="0">0€</data>
@@ -83,24 +96,24 @@
           <ul class="navbar-list">
 
             <li>
-              <a href="#home" class="navbar-link has-after">Acceuil</a>
+              <a href="index.html" class="navbar-link has-after">Acceuil</a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#collection" class="navbar-link has-after">Produits</a>
             </li>
 
             <li>
               <a href="#shop" class="navbar-link has-after">Acheter</a>
-            </li>
+            </li> -->
 
-            <li>
+            <!-- <li>
               <a href="#offer" class="navbar-link has-after">Evenement</a>
-            </li>
+            </li> -->
 
-            <li>
+            <!-- <li>
               <a href="#blog" class="navbar-link has-after">Blog</a>
-            </li>
+            </li> -->
 
           </ul>
         </nav>
@@ -161,13 +174,370 @@
   </div>
 
 
-  <video src="../assets/videos/presenation-food-truck-churreria.mp4"></video>
+  <!-- <video src="../assets/videos/presenation-food-truck-churreria.mp4"></video> 
+  -->
+
+
+
+
+      <!-- 
+        : COLLECTION & PRODUCTS :
+      -->
+
+      <h2 class="h2-large section-title products-layout">Carte des Produits</h2>
+
+      <section>
+      <div class="section collection" id="collection" aria-label="collection" data-section>
+
+        <div class="container">
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Bubble Waffle</h2>
+
+                <p class="card-text">Fraise 5€</p>
+
+                <a href="specialOffer.html" class="btn-link">
+                  <span class="span">Acheter maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/litle-card-bueno.png')"></div>
+
+              </div>
+            </li>
+
+            <li>
+
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Bubble Waffle</h2>
+
+                <p class="card-text">Trouvez nous facilement</p>
+
+                <a href="map.html" class="btn-link">
+                  <span class="span">Découvrir maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-food-truck-card.png')">
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Bubble Waffle</h2>
+
+                <p class="card-text">Contactez nous</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Découvrir maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-waffle-card-color.png')">
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- </section> -->
+
+
+      <div class="section collection" id="collection" aria-label="collection" data-section>
+
+        <div class="container">
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Bubble Waffle</h2>
+
+                <p class="card-text">A partir de 7.99€</p>
+
+                <a href="specialOffer.html" class="btn-link">
+                  <span class="span">Acheter maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-cream-card.png')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Bubble Waffle</h2>
+
+                <p class="card-text">Trouvez nous facilement</p>
+
+                <a href="map.html" class="btn-link">
+                  <span class="span">Découvrir maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-food-truck-card.png')">
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Bubble Waffle</h2>
+
+                <p class="card-text">Contactez nous</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Découvrir maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-waffle-card-color.png')">
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="section collection" id="collection" aria-label="collection" data-section>
+
+        <div class="container">
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Offre spéciale</h2>
+
+                <p class="card-text">A partir de 7.99€</p>
+
+                <a href="specialOffer.html" class="btn-link">
+                  <span class="span">Acheter maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-cream-card.png')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Près de chez vous</h2>
+
+                <p class="card-text">Trouvez nous facilement</p>
+
+                <a href="map.html" class="btn-link">
+                  <span class="span">Découvrir maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-food-truck-card.png')">
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Evenementiel</h2>
+
+                <p class="card-text">Contactez nous</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Découvrir maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-waffle-card-color.png')">
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+
+      <div class="section collection" id="collection" aria-label="collection" data-section>
+
+        <div class="container">
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Offre spéciale</h2>
+
+                <p class="card-text">A partir de 7.99€</p>
+
+                <a href="specialOffer.html" class="btn-link">
+                  <span class="span">Acheter maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-cream-card.png')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Près de chez vous</h2>
+
+                <p class="card-text">Trouvez nous facilement</p>
+
+                <a href="map.html" class="btn-link">
+                  <span class="span">Découvrir maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-food-truck-card.png')">
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Evenementiel</h2>
+
+                <p class="card-text">Contactez nous</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Découvrir maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-waffle-card-color.png')">
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+
+      <div class="section collection" id="collection" aria-label="collection" data-section>
+
+        <div class="container">
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Offre spéciale</h2>
+
+                <p class="card-text">A partir de 7.99€</p>
+
+                <a href="specialOffer.html" class="btn-link">
+                  <span class="span">Acheter maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-cream-card.png')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Près de chez vous</h2>
+
+                <p class="card-text">Trouvez nous facilement</p>
+
+                <a href="map.html" class="btn-link">
+                  <span class="span">Découvrir maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-food-truck-card.png')">
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Evenementiel</h2>
+
+                <p class="card-text">Contactez nous</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Découvrir maintenant</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('../images/collection-waffle-card-color.png')">
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      
+    </section>
+
+    </article>
+  </main>
 
 
 
 
 
-   <!-- 
+
+  <!-- 
     : FOOTER :
   -->
 
@@ -252,7 +622,7 @@
 
         <div class="footer-list">
 
-          <p class="newsletter-title">Good emails.</p>
+          <p class="newsletter-title">Inscription Newsletter</p>
 
           <p class="newsletter-text">
             Enter your email below to be the first to know about new collections and product launches.
@@ -335,6 +705,7 @@
     * ionicon link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
+
 </body>
+
 </html>

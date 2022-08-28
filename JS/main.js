@@ -3,7 +3,7 @@
 
 
 /**
- * add event on element
+ * :: add event on element ::
  */
 
 const addEventOnElem = function (elem, type, callback) {
@@ -19,7 +19,7 @@ const addEventOnElem = function (elem, type, callback) {
 
 
 /**
- * navbar toggle
+ * :: navbar toggle ::
  */
 
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
@@ -41,10 +41,11 @@ const closeNavbar = function () {
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
-
+// const dotenv = require('dotenv').config({path: '/secretKey' + '.env'})
+// console.log(dotenv) 
 
 /**
- * header sticky & back top btn active
+ * :: header sticky & back top btn active ::
  */
 
 const header = document.querySelector("[data-header]");
@@ -79,7 +80,7 @@ addEventOnElem(window, "scroll", headerSticky);
 
 
 /**
- * scroll reveal effect
+ * :: scroll reveal effect  ::
  */
 
 const sections = document.querySelectorAll("[data-section]");

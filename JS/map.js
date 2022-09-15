@@ -1,7 +1,6 @@
-'use strict';
+"use strict";
 
-import { secretMapToken } from '../secretKey.js';
-
+import { secretMapToken } from "../secretKey.js";
 
 /**
  **  mapBox configuration  */
@@ -9,30 +8,27 @@ import { secretMapToken } from '../secretKey.js';
 mapboxgl.accessToken = secretMapToken;
 
 const map = new mapboxgl.Map({
-  container: 'map', //: container ID
-  style: 'mapbox://styles/mapbox/streets-v11', //: style URL
+  container: "map", //: container ID
+  style: "mapbox://styles/mapbox/streets-v11", //: style URL
   center: [2.82, 50.43], //: starting position [lng, lat]
   zoom: 14, //: starting zoom
-  projection: 'globe' //:: display the map as a 3D globe
+  projection: "globe", //:: display the map as a 3D globe
 });
-map.on('style.load', () => {
+map.on("style.load", () => {
   map.setFog({}); //: Set the default atmosphere style
 });
- 
-var mapNav = new mapboxgl.NavigationControl()
-  map.addControl(mapNav)
 
+var mapNav = new mapboxgl.NavigationControl();
+map.addControl(mapNav);
 
- map.addControl(new MapboxDirections({
-  accessToken: mapboxgl.accessToken}), 'top-left')
+map.addControl(
+  new MapboxDirections({
+    accessToken: mapboxgl.accessToken,
+  }),
+  "top-left"
+);
 
-
-  const marker1 = new mapboxgl.Marker()
-  .setLngLat([2.82, 50.43])
-  .addTo(map);
-
-
-
+const marker1 = new mapboxgl.Marker().setLngLat([2.82, 50.43]).addTo(map);
 
 /**
  **  add event on element  */
@@ -45,8 +41,7 @@ const addEventOnElem = function (elem, type, callback) {
   } else {
     elem.addEventListener(type, callback);
   }
-}
-
+};
 
 /**
  **  navbar toggle  */
@@ -59,21 +54,19 @@ const overlay = document.querySelector("[data-overlay]");
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
-}
+};
 
 addEventOnElem(navTogglers, "click", toggleNavbar);
 
 const closeNavbar = function () {
   navbar.classList.remove("active");
   overlay.classList.remove("active");
-}
+};
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
-
-
 /**
-  **  header sticky & back top btn active  */
+ **  header sticky & back top btn active  */
 
 const header = document.querySelector("[data-header]");
 console.log(header);
@@ -87,7 +80,7 @@ const headerActive = function () {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
   }
-}
+};
 
 addEventOnElem(window, "scroll", headerActive);
 
@@ -101,11 +94,9 @@ const headerSticky = function () {
   }
 
   lastScrolledPos = window.scrollY;
-}
+};
 
 addEventOnElem(window, "scroll", headerSticky);
-
-
 
 /**
  *  scroll reveal effect  */
@@ -118,7 +109,7 @@ const scrollReveal = function () {
       sections[i].classList.add("active");
     }
   }
-}
+};
 
 scrollReveal();
 

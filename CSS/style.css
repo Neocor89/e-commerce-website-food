@@ -1010,9 +1010,9 @@ body {
 
 
 
-/*----------------------------*\
+/* -------------------*\
  ::: PRODUCTS PAGES ::: 
-\*----------------------------*/
+\*-------------------*/
 
 .products-layout {
   text-align: center;
@@ -1024,8 +1024,142 @@ body {
 
 
 /*-----------------------------------*\
-  #MEDIA QUERIES
+ * # LOYALTYCARD PAGES
 \*-----------------------------------*/
+
+.contact { 
+  padding-block: var(--section-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-content { margin-bottom: 50px; }
+
+.contact-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-item-icon {
+  font-size: 25px;
+  color: var(--black);
+}
+
+.contact-item-icon ion-icon { --ionicon-stroke-width: 40px; }
+
+.contact-item-title { margin-bottom: 10px; }
+
+.contact-list-item .contact-info {
+  color: var(--black);
+  font-style: normal;
+  line-height: 1.6;
+  transition: var(--transition-1);
+}
+.contac-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding-inline: 40px;
+}
+.contact-form {
+  background: var(--floral-white);
+  padding: 20px;
+  border-radius: var(--radius-12);
+  box-shadow: var(--shadow-1);
+}
+/* 
+
+
+
+.contact-info:not(address):is(:hover, :focus) { color: var(--black); }
+
+
+.contact-social-link {
+  position: relative;
+  background: var(--black);
+  color: var(--bg-primary);
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.contact-social-link:is(:hover, :focus) {
+  background: var(--pale-spring-bud);
+  color: var(--white);
+}
+
+.contact-social-link:is(:hover, :focus) .tooltip {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.form-wrapper { margin-bottom: 25px; }
+
+.form-label {
+  color: var(--black);
+  font-size: var(--fs-7);
+  font-family: var(--ff-urbanist);
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+
+.input-wrapper { position: relative; }
+
+.input-field {
+  background: var(--champagne_50);
+  color: var(--pale-spring-bud);
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: var(--radius-12);
+  transition: var(--transition-1);
+}
+
+.input-wrapper ion-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: var(--white);
+  font-size: 20px;
+  transition: var(--transition-1);
+}
+
+textarea.input-field {
+  min-height: 60px;
+  height: 120px;
+  max-height: 200px;
+  resize: vertical;
+}
+
+.input-field:focus { outline: 1px solid; }
+
+.input-field:focus + ion-icon { color: var(--pale-spring-bud); }
+
+.contact .btn-primary {
+  max-width: unset;
+  width: 100%;
+  background: var(--black);
+  color: var(--bg-primary);
+} */
+
+
+
+
+
+
+
+/*----------------*\
+ # MEDIA QUERIES
+\*----------------*/
 
 /**
  * responsive for larger than 575px screen
@@ -1379,6 +1513,7 @@ body {
   .navbar .navbar-list {
     display: flex;
     justify-content: center;
+    margin-left: 60px;  /*! ADD PROP FIX ML NAVBAR */
     gap: 45px;
   }
 

@@ -1078,6 +1078,7 @@ body {
   padding-inline: 40px;
 }
 .contact-form {
+  width: 55vw;
   background: var(--floral-white);
   padding: 20px;
   border-radius: var(--radius-12);
